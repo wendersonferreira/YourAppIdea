@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
     <issue id="InvalidPackage">
-        <ignore regexp=".*javapoet.*"/>
+        <ignore regexp="java.nio.file"/>
+    </issue>
+    <issue id="InvalidPackage">
+        <ignore regexp="java.lang.invoke"/>
     </issue>
 </lint>

@@ -35,7 +35,7 @@ public class PlaceRecyclerAdapter extends RecyclerView.Adapter<PlaceRecyclerAdap
         Place place = (Place) this.places.get(position);
         viewHolder.getNameView().setText(place.getName());
         viewHolder.getCountryView().setText(place.getCountry());
-        viewHolder.getDistanceView().setText(viewHolder.itemView.getContext().getString(R.string.aroundme_placedistance, (int) (place.getDistance() / 1000)));
+        viewHolder.getDistanceView().setText(viewHolder.itemView.getContext().getString(R.string.aroundme_placedistance, (int)(place.getDistance() / 1000)));
         ImageLoader.getInstance().displayImage(place.getImage(), viewHolder.getImageView());
     }
 
